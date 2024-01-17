@@ -1,0 +1,22 @@
+public class Fibonacci {
+
+    /**
+     * Calculates the nth term of the Fibonacci sequence using recursion.
+     *
+     * @param n the position in the Fibonacci sequence to calculate
+     * @return the nth term of the Fibonacci sequence
+     */
+    public static int fibonacci(int n) {
+        if (n <= 1) {
+            return n;
+        } else {
+            return fibonacci(n - 1) + fibonacci(n - 2);
+        }
+    }
+
+    public static void main(String[] args) {
+        int n = 10; // the nth term to find
+        int fibTerm = fibonacci(n);
+        System.out.println("The " + n + "th term of the Fibonacci sequence is " + fibTerm + ".");
+    }
+}
